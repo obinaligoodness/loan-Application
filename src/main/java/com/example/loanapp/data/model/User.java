@@ -1,9 +1,10 @@
-package data.model;
+package com.example.loanapp.data.model;
 
 
-import data.Enums.EmploymentClassification;
-import data.Enums.EmploymentStatus;
-import data.Enums.Sex;
+
+import com.example.loanapp.data.Enums.EmploymentClassification;
+import com.example.loanapp.data.Enums.EmploymentStatus;
+import com.example.loanapp.data.Enums.Sex;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

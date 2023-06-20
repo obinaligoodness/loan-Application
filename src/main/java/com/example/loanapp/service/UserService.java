@@ -1,11 +1,12 @@
-package service;
+package com.example.loanapp.service;
 
-import dto.request.LoanApplicationRequest;
-import dto.request.LoginRequest;
-import dto.request.RegistrationRequest;
-import dto.response.LoanApplicationResponse;
-import dto.response.LoginResponse;
-import dto.response.RegistrationResponse;
+
+import com.example.loanapp.dto.request.LoanApplicationRequest;
+import com.example.loanapp.dto.request.LoginRequest;
+import com.example.loanapp.dto.request.RegistrationRequest;
+import com.example.loanapp.dto.response.LoanApplicationResponse;
+import com.example.loanapp.dto.response.LoginResponse;
+import com.example.loanapp.dto.response.RegistrationResponse;
 
 public interface UserService {
     RegistrationResponse register(RegistrationRequest registrationRequest);
@@ -14,3 +15,4 @@ public interface UserService {
     String viewLoanApplicationStatus();
     String viewLoanAgreement();
 }
+

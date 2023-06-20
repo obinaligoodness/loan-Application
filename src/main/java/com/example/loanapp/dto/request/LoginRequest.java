@@ -1,4 +1,4 @@
-package dto.request;
+package com.example.loanapp.dto.request;
 
 import lombok.Data;
 

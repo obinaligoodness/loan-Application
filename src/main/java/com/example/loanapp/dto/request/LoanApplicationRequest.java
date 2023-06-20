@@ -1,6 +1,6 @@
-package dto.request;
+package com.example.loanapp.dto.request;
 
-import data.Enums.LoanType;
+import com.example.loanapp.data.Enums.LoanType;
 import lombok.Data;
 
 import java.math.BigDecimal;

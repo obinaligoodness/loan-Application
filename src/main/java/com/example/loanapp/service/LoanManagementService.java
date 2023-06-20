@@ -1,2 +1,4 @@
-package com.example.loanapp.service;public class LoanManagementService {
+package com.example.loanapp.service;
+
+public class LoanManagementService {
 }

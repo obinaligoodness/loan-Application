@@ -1,8 +1,9 @@
-package dto.request;
+package com.example.loanapp.dto.request;
 
-import data.Enums.EmploymentClassification;
-import data.Enums.EmploymentStatus;
-import data.Enums.Sex;
+
+import com.example.loanapp.data.Enums.EmploymentClassification;
+import com.example.loanapp.data.Enums.EmploymentStatus;
+import com.example.loanapp.data.Enums.Sex;
 import lombok.Data;
 
 import java.math.BigDecimal;

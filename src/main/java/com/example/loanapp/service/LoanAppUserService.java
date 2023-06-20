@@ -1,30 +1,31 @@
-package service;
+package com.example.loanapp.service;
 
-import data.model.Loan;
-import data.model.User;
-import data.repositories.LoanRepository;
-import data.repositories.UserRepository;
-import dto.request.LoanApplicationRequest;
-import dto.request.LoginRequest;
-import dto.request.RegistrationRequest;
-import dto.response.LoanApplicationResponse;
-import dto.response.LoginResponse;
-import dto.response.RegistrationResponse;
+
+import com.example.loanapp.LoanAppApplication;
+import com.example.loanapp.data.model.Loan;
+import com.example.loanapp.data.model.User;
+import com.example.loanapp.data.repositories.LoanRepository;
+import com.example.loanapp.data.repositories.UserRepository;
+import com.example.loanapp.dto.request.LoanApplicationRequest;
+import com.example.loanapp.dto.request.LoginRequest;
+import com.example.loanapp.dto.request.RegistrationRequest;
+import com.example.loanapp.dto.response.LoanApplicationResponse;
+import com.example.loanapp.dto.response.LoginResponse;
+import com.example.loanapp.dto.response.RegistrationResponse;
+import com.example.loanapp.utils.Mapper;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import utils.Mapper;
 
 import java.util.Objects;
+
 
 @Service
 @RequiredArgsConstructor
 public class LoanAppUserService implements UserService{
 
     private final UserRepository userRepository;
-
-    @Autowired
     private final LoanRepository loanRepository;
+    private final LoanAppApplication loanAppApplication;
 
 
 

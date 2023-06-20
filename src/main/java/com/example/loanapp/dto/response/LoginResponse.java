@@ -1,7 +1,8 @@
-package dto.response;
+package com.example.loanapp.dto.response;
 
-import data.model.LoanManagement;
-import data.model.User;
+
+import com.example.loanapp.data.model.LoanManagement;
+import com.example.loanapp.data.model.User;
 import lombok.Data;
 
 @Data

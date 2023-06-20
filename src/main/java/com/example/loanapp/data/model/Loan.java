@@ -1,6 +1,7 @@
-package data.model;
+package com.example.loanapp.data.model;
 
-import data.Enums.LoanType;
+
+import com.example.loanapp.data.Enums.LoanType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

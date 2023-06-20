@@ -1,11 +1,12 @@
-package utils;
+package com.example.loanapp.utils;
 
-import data.model.Loan;
-import data.model.User;
-import dto.request.LoanApplicationRequest;
-import dto.request.RegistrationRequest;
-import dto.response.LoanApplicationResponse;
-import dto.response.RegistrationResponse;
+
+import com.example.loanapp.data.model.Loan;
+import com.example.loanapp.data.model.User;
+import com.example.loanapp.dto.request.LoanApplicationRequest;
+import com.example.loanapp.dto.request.RegistrationRequest;
+import com.example.loanapp.dto.response.LoanApplicationResponse;
+import com.example.loanapp.dto.response.RegistrationResponse;
 
 public class Mapper {
 
@@ -27,6 +28,18 @@ public class Mapper {
 
     public static RegistrationResponse map(User savedUser){
         RegistrationResponse response = new RegistrationResponse();
+        response.setAddress(savedUser.getAddress());
+        response.setEmail(savedUser.getEmail());
+        response.setFirstName(savedUser.getFirstName());
+        response.setLastName(savedUser.getLastName());
+        response.setEmploymentStatus(savedUser.getEmploymentStatus());
+        response.setPhoneNumber(savedUser.getPhoneNumber());
+        response.setSex(savedUser.getSex());
+        response.setBasicMonthSalary(savedUser.getBasicMonthSalary());
+        response.setEmploymentClassification(savedUser.getEmploymentClassification());
+        response.setNameOfCurrentEmployer(savedUser.getNameOfCurrentEmployer());
+        response.setPassword(savedUser.getPassword());
+
         response.setMessage("Registration Successful");
         return response;
     }

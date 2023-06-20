@@ -1,6 +1,7 @@
-package service;
+package com.example.loanapp.service;
 
-import data.model.LoanManagement;
+
+import com.example.loanapp.data.model.LoanManagement;
 
 import java.util.List;
 
