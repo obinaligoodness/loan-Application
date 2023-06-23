@@ -38,12 +38,6 @@ public class LoanAppUserService implements UserService{
 
     @Override
     public LoginResponse login(LoginRequest loginRequest) {
-        User foundUser = userRepository.findByPhoneNumber(loginRequest.getPhoneNumber());
-        if (Objects.equals(foundUser.getPassword(), loginRequest.getPassword())){
-            LoginResponse response = new LoginResponse();
-            response.setFoundUser(foundUser);
-            return response;
-        }
         return null;
     }
 

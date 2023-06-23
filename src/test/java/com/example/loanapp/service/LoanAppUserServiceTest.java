@@ -26,7 +26,7 @@ class LoanAppUserServiceTest {
         user.setEmploymentClassification(JUNIOR_STAFF);
         RegistrationResponse response =  userService.register(user);
 
-        assertEquals(user.g);
+        assertEquals(user.getFirstName(), response.getFirstName());
         assertEquals("Registration Successful", response.getMessage());
     }
 
